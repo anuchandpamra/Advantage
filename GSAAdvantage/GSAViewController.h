@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GSAViewController : UIViewController
+@class SearchResultsSummaryDataController;
 
+@interface GSAViewController : UIViewController {
+    NSMutableData* myTokenBuffer;
+}
+
+
+@property (strong, nonatomic)SearchResultsSummaryDataController *searchResultDataController;
+@property (strong, nonatomic)NSString *currentSearchQuery;
+@property (weak, nonatomic) IBOutlet UITextField *searchQuery;
+@property (weak, nonatomic) IBOutlet UITableView *tableViewer;
+- (IBAction)search:(id)sender;
+
+- (IBAction)queryEntered:(id)sender;
 @end
