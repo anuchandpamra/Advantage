@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "ItemDetailsDataController.h"
 #import "ItemDetails.h"
+#import "VendorForItem.h"
 
 // Tags for the item general information
 #define IMAGEVIEW_TAG 1
@@ -123,6 +124,27 @@
 }
 
 
+- (void) displayAVendorForItem:(UITableViewCell *) cell atIndexPath:(NSIndexPath*) indexPath{
+    
+    UILabel *priceLabel = (UILabel *)[cell.contentView viewWithTag:VNDRPRICELABEL_TAG];
+    UILabel *ctrLabel = (UILabel *)[cell.contentView viewWithTag:VENDORNAMELABEL_TAG];
+    UILabel *socioLabel = (UILabel *)[cell.contentView viewWithTag:SOCIOLABEL_TAG];
+    UILabel *deliveryLabel = (UILabel *)[cell.contentView viewWithTag:DLVRYDAYSLABEL_TAG];
+    
+    
+    
+    ItemDetails *itemDetails = self.itemDetailDataController.itemDetails;  
+    VendorForItem *vndr = [itemDetails.vendorList objectAtIndex:(indexPath.row-3)];
+    
+    
+    priceLabel.text = vndr.itemPrice;
+    ctrLabel.text = vndr.contractorName;
+    socioLabel.text = vndr.socioIndicators;
+    deliveryLabel.text = vndr.deliveryDays;
+        
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
  
@@ -147,6 +169,7 @@
             break;
         default:
             cell = [tableView dequeueReusableCellWithIdentifier:vendorsCellId];
+            [self displayAVendorForItem:cell atIndexPath:indexPath];
             break;
     }
     

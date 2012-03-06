@@ -27,27 +27,40 @@
         ]>
 <prd_dtl xmlns="prod_dtl">
     <prd_info>
-        <title>Product Title</title>
-        <mpno>Manufacturer Part Number</mpno>
-        <cpno>Contractor Part Number</cpno>
-        <mfr>Manufacturer</mfr>
-        <cntrct_num>Contract Number</cntrct_num>
-        <MAS>MAS Schedule</MAS>
-        <SIN>SIN</SIN>
-        <Warranty></Warranty>
-        <MadeIn></MadeIn>
-        <wt>Weight</wt>
-        <desc>Description</desc>
-        <photo_url>URL of the photo</photo_url>
+        <title>CANON CLI-221 GRAY INK CARTRIDGE</title>
+        <mpno>CLI221G</mpno>
+        <cpno>OEM-CLI221G</cpno>
+        <mfr>CANON</mfr>
+        <cntrct_num>GS-02F-0073P (ends: Jan 22, 2014)</cntrct_num>
+        <MAS>75/75 200</MAS>
+        <SIN>75/75 200</SIN>
+        <Warranty>STANDARD WARRANTY</Warranty>
+        <MadeIn>UNITED STATES OF AMERICA</MadeIn>
+        <wt>0.007 LB</wt>
+        <desc>Pacific Ink. FREE DELIVERY. WOMAN OWNED SMALL BUSINESS. Quote call 858-952-1103. OEM # CLI-221Pacific Ink has a surplus buy back program. If you have excess CLI-221 cartridges, or any others, trade them in for cartridges you need. Contact us for more details.Works in Canon PIXMAiP3600, Canon PIXMAiP4600, Canon PIXMAMP620, Canon PIXMAMP980, Canon PIXMAMX860, Canon PIXMAPMFP1, Canon PIXMAPMFP3, Canon PIXMASFP1, Canon PIXMASFP2, Canon PIXUSMP610, Canon PIXUSMX860, Canon PIXMAMP640, Canon PIXMAMP560
+</desc>
+        <photo_url>https://www.gsaadvantage.gov/images/products/GS-02F-0073P/CLI221G.JPG</photo_url>
     </prd_info>
     <selected_vndr>
-        <price>Price of item</price>
-        <vndr_name>Vendor Name</vndr_name>
+        <price>$13.57 EA</price>
+        <vndr_name>Pacific Ink, Inc.</vndr_name>
     </selected_vndr>
     <vndr_list>
         <vndr>
-            <price>Price</price>
-            <vndr_name>Vendor Name</vndr_name>
+            <price>$11.86 EA</price>
+            <vndr_name>American Toner LLC</vndr_name>
+            <socio_inds>
+                <ind>s</ind>
+                <ind>w</ind>
+            </socio_inds>
+            <delivery_dt>30 days delivered ARO</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
+            <price>$13.57 EA</price>
+            <vndr_name>Pacific Ink</vndr_name>
             <socio_inds>
                 <ind></ind>
                 <ind></ind>
@@ -62,24 +75,10 @@
             <price>Price</price>
             <vndr_name>Vendor Name</vndr_name>
             <socio_inds>
-                <ind></ind>
-                <ind></ind>
-                <ind></ind>
+                <ind>s</ind>
+                <ind>w</ind>
             </socio_inds>
-            <delivery_dt>Delivery Date</delivery_dt>
-            <min></min>
-            <FOB></FOB>
-            <shipping></shipping>
-        </vndr>
-        <vndr>
-            <price>Price</price>
-            <vndr_name>Vendor Name</vndr_name>
-            <socio_inds>
-                <ind></ind>
-                <ind></ind>
-                <ind></ind>
-            </socio_inds>
-            <delivery_dt>Delivery Date</delivery_dt>
+            <delivery_dt>5 days delivered ARO</delivery_dt>
             <min></min>
             <FOB></FOB>
             <shipping></shipping>

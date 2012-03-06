@@ -109,6 +109,11 @@ bool socioIndIsEmpty;
         self.currentString = nil;
     }
     
+    if ([elementName isEqualToString:@"desc"]) {
+        self.itemDetails.description = self.currentString;
+        self.currentString = nil;
+    }
+    
     if ([elementName isEqualToString:@"photo_url"]) {
         self.itemDetails.imageURL = self.currentString;
         self.currentString = nil;
