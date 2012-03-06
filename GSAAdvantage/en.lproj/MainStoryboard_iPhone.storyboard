@@ -111,7 +111,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="ron-xr-B8f" kind="push" id="HcD-TM-sFz"/>
+                                    <segue destination="ron-xr-B8f" kind="push" identifier="ShowItemDetails" id="HcD-TM-sFz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -362,23 +362,6 @@
     <resources>
         <image name="gsa_logo.jpg" width="218" height="59"/>
     </resources>
-    <classes>
-        <class className="DetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-        </class>
-        <class className="GSAViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GSAViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="queryEntered:"/>
-                <relationship kind="action" name="search:"/>
-                <relationship kind="outlet" name="searchQuery" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="tableViewer" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="SearchResultsSummaryItemViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchResultsSummaryItemViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

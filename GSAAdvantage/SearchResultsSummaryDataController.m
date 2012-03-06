@@ -57,11 +57,11 @@
 }
 
 - (void) parserDidEndDocument:(NSXMLParser *)parser{
-    NSLog(@"Ending Document processing");
+    //NSLog(@"Ending Document processing");
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
-    NSLog(@"Found an element :%@",elementName);
+    //NSLog(@"Found an element :%@",elementName);
     if (attributeDict && [attributeDict count] > 0) {
         NSLog(@"Element %@ has Attributes: %@",elementName, attributeDict);
     }
@@ -74,14 +74,14 @@
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
-    NSLog(@"Found raw characters: %@", string);
+    //NSLog(@"Found raw characters: %@", string);
     self.currentString = string;
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
-    NSLog(@"Element is closing: %@", elementName);
+    //NSLog(@"Element is closing: %@", elementName);
     if ([elementName isEqualToString:@"autn:hit"]){
-        NSLog(@"Search item Will be added to the collection");
+        //NSLog(@"Search item Will be added to the collection");
         [self addSearchResultsSummaryItem:self.currentItem];
     }
     

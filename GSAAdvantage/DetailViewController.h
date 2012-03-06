@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class ItemDetailsDataController;
+
 @interface DetailViewController : UITableViewController
+
+@property (nonatomic, strong) ItemDetailsDataController *itemDetailDataController;
 
 @end

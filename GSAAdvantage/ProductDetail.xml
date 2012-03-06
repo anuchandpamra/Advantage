@@ -1,0 +1,88 @@
+<!DOCTYPE prd_dtl [
+        <!ELEMENT prd_dtl (prd_info|selected_vndr|vndr_list)*>
+        <!ELEMENT prd_info (title|mpno|cpno|mfr|cntrct_num|MAS|SIN|Warranty|MadeIn|wt|desc|photo_url)*>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT mpno (#PCDATA)>
+        <!ELEMENT cpno (#PCDATA)>
+        <!ELEMENT mfr (#PCDATA)>
+        <!ELEMENT cntrct_num (#PCDATA)>
+        <!ELEMENT MAS (#PCDATA)>
+        <!ELEMENT SIN (#PCDATA)>
+        <!ELEMENT Warranty (#PCDATA)>
+        <!ELEMENT MadeIn (#PCDATA)>
+        <!ELEMENT wt (#PCDATA)>
+        <!ELEMENT desc (#PCDATA)>
+        <!ELEMENT photo_url (#PCDATA)>
+        <!ELEMENT selected_vndr (price|vndr_name)*>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT vndr_name (#PCDATA)>
+        <!ELEMENT vndr_list (vndr)*>
+        <!ELEMENT vndr (price|vndr_name|socio_inds|delivery_dt|min|FOB|shipping)*>
+        <!ELEMENT socio_inds (ind)*>
+        <!ELEMENT ind (#PCDATA)>
+        <!ELEMENT delivery_dt (#PCDATA)>
+        <!ELEMENT min (#PCDATA)>
+        <!ELEMENT FOB (#PCDATA)>
+        <!ELEMENT shipping (#PCDATA)>
+        ]>
+<prd_dtl xmlns="prod_dtl">
+    <prd_info>
+        <title>Product Title</title>
+        <mpno>Manufacturer Part Number</mpno>
+        <cpno>Contractor Part Number</cpno>
+        <mfr>Manufacturer</mfr>
+        <cntrct_num>Contract Number</cntrct_num>
+        <MAS>MAS Schedule</MAS>
+        <SIN>SIN</SIN>
+        <Warranty></Warranty>
+        <MadeIn></MadeIn>
+        <wt>Weight</wt>
+        <desc>Description</desc>
+        <photo_url>URL of the photo</photo_url>
+    </prd_info>
+    <selected_vndr>
+        <price>Price of item</price>
+        <vndr_name>Vendor Name</vndr_name>
+    </selected_vndr>
+    <vndr_list>
+        <vndr>
+            <price>Price</price>
+            <vndr_name>Vendor Name</vndr_name>
+            <socio_inds>
+                <ind></ind>
+                <ind></ind>
+                <ind></ind>
+            </socio_inds>
+            <delivery_dt>Delivery Date</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
+            <price>Price</price>
+            <vndr_name>Vendor Name</vndr_name>
+            <socio_inds>
+                <ind></ind>
+                <ind></ind>
+                <ind></ind>
+            </socio_inds>
+            <delivery_dt>Delivery Date</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
+            <price>Price</price>
+            <vndr_name>Vendor Name</vndr_name>
+            <socio_inds>
+                <ind></ind>
+                <ind></ind>
+                <ind></ind>
+            </socio_inds>
+            <delivery_dt>Delivery Date</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+    </vndr_list>
+</prd_dtl>

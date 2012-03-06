@@ -10,7 +10,7 @@
 
 @class SearchResultsSummaryDataController;
 
-@interface GSAViewController : UIViewController {
+@interface GSAViewController : UIViewController <NSXMLParserDelegate> {
     NSMutableData* myTokenBuffer;
 }
 

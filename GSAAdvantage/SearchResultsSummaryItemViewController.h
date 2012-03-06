@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class SearchResultsSummaryDataController;
+@class ItemDetailsDataController;
 
 @interface SearchResultsSummaryItemViewController : UITableViewController
 
-@property (nonatomic) SearchResultsSummaryDataController *searchResultsSummaryDataController;
+@property (nonatomic, strong) SearchResultsSummaryDataController *searchResultsSummaryDataController;
+@property (nonatomic, strong) ItemDetailsDataController *itemDetailDataController;
 
 @end

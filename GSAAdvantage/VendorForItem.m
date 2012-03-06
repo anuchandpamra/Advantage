@@ -10,5 +10,7 @@
 
 @implementation VendorForItem
 
+@synthesize contractorName = _contractorName, contractorNumber = _contractorNumber, itemPrice = _itemPrice;
+@synthesize socioIndicators = _socioIndicators, deliveryDays = _deliveryDays;
 
 @end

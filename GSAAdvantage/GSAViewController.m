@@ -104,9 +104,9 @@ NSString * const wsPath = @"&q=1:4ADV.OFF*&db=0&searchType=1&c=30&z=r";
     if ([[segue identifier] isEqualToString:@"ShowSearchSummaryResults"]) {
         SearchResultsSummaryItemViewController *searchResultsSummaryViewController = [segue
                                                            destinationViewController];
-        NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> Ready to Segue");
+        //NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> Ready to Segue");
         searchResultsSummaryViewController.searchResultsSummaryDataController = self.searchResultDataController;
-        NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> Segueing");
+        //NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> Segueing");
     } 
 }
 

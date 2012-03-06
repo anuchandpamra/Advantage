@@ -11,6 +11,9 @@
 		6E4DE1E514FBAA9700C6D18B /* SearchResultsSummaryDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DE1E414FBAA9700C6D18B /* SearchResultsSummaryDataController.m */; };
 		6EC3EFE015046171007B383A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3EFDF15046171007B383A /* DetailViewController.m */; };
 		6EC3EFE41504EAB6007B383A /* VendorForItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3EFE31504EAB6007B383A /* VendorForItem.m */; };
+		6EC3EFE715050788007B383A /* ItemDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3EFE615050788007B383A /* ItemDetails.m */; };
+		6EC3EFEA15063655007B383A /* ItemDetailsDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3EFE915063654007B383A /* ItemDetailsDataController.m */; };
+		6EC3EFEC1506471F007B383A /* ProductDetail.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3EFEB1506471F007B383A /* ProductDetail.xml */; };
 		6ECEF8C614EC92CB0052A71E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECEF8C514EC92CB0052A71E /* UIKit.framework */; };
 		6ECEF8C814EC92CB0052A71E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECEF8C714EC92CB0052A71E /* Foundation.framework */; };
 		6ECEF8CA14EC92CB0052A71E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECEF8C914EC92CB0052A71E /* CoreGraphics.framework */; };
@@ -48,6 +51,11 @@
 		6EC3EFDF15046171007B383A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		6EC3EFE21504EAB6007B383A /* VendorForItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorForItem.h; sourceTree = "<group>"; };
 		6EC3EFE31504EAB6007B383A /* VendorForItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VendorForItem.m; sourceTree = "<group>"; };
+		6EC3EFE515050788007B383A /* ItemDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetails.h; sourceTree = "<group>"; };
+		6EC3EFE615050788007B383A /* ItemDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetails.m; sourceTree = "<group>"; };
+		6EC3EFE815063654007B383A /* ItemDetailsDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailsDataController.h; sourceTree = "<group>"; };
+		6EC3EFE915063654007B383A /* ItemDetailsDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailsDataController.m; sourceTree = "<group>"; };
+		6EC3EFEB1506471F007B383A /* ProductDetail.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ProductDetail.xml; sourceTree = "<group>"; };
 		6ECEF8C114EC92CB0052A71E /* GSAAdvantage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSAAdvantage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECEF8C514EC92CB0052A71E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6ECEF8C714EC92CB0052A71E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +142,8 @@
 				6E4DE1E014FBA7DA00C6D18B /* SearchResultsSummaryItem.m */,
 				6E4DE1E314FBAA9700C6D18B /* SearchResultsSummaryDataController.h */,
 				6E4DE1E414FBAA9700C6D18B /* SearchResultsSummaryDataController.m */,
+				6EC3EFE815063654007B383A /* ItemDetailsDataController.h */,
+				6EC3EFE915063654007B383A /* ItemDetailsDataController.m */,
 				6ECEF8D414EC92CC0052A71E /* GSAAppDelegate.h */,
 				6ECEF8D514EC92CC0052A71E /* GSAAppDelegate.m */,
 				6ECEF8D714EC92CC0052A71E /* MainStoryboard_iPhone.storyboard */,
@@ -143,10 +153,13 @@
 				6ECEF8CC14EC92CB0052A71E /* Supporting Files */,
 				6EF2134414FBCC0E00B60328 /* SearchResultsSummaryItemViewController.h */,
 				6EF2134514FBCC0E00B60328 /* SearchResultsSummaryItemViewController.m */,
+				6EC3EFE21504EAB6007B383A /* VendorForItem.h */,
 				6EC3EFDE15046171007B383A /* DetailViewController.h */,
 				6EC3EFDF15046171007B383A /* DetailViewController.m */,
-				6EC3EFE21504EAB6007B383A /* VendorForItem.h */,
 				6EC3EFE31504EAB6007B383A /* VendorForItem.m */,
+				6EC3EFE515050788007B383A /* ItemDetails.h */,
+				6EC3EFE615050788007B383A /* ItemDetails.m */,
+				6EC3EFEB1506471F007B383A /* ProductDetail.xml */,
 			);
 			path = GSAAdvantage;
 			sourceTree = "<group>";
@@ -257,6 +270,7 @@
 				6ECEF8D914EC92CC0052A71E /* MainStoryboard_iPhone.storyboard in Resources */,
 				6ECEF8DC14EC92CC0052A71E /* MainStoryboard_iPad.storyboard in Resources */,
 				6ECEF8FE14EC939B0052A71E /* gsa_logo.jpg in Resources */,
+				6EC3EFEC1506471F007B383A /* ProductDetail.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +313,8 @@
 				6EF2134614FBCC0E00B60328 /* SearchResultsSummaryItemViewController.m in Sources */,
 				6EC3EFE015046171007B383A /* DetailViewController.m in Sources */,
 				6EC3EFE41504EAB6007B383A /* VendorForItem.m in Sources */,
+				6EC3EFE715050788007B383A /* ItemDetails.m in Sources */,
+				6EC3EFEA15063655007B383A /* ItemDetailsDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

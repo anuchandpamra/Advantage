@@ -9,7 +9,8 @@
 #import "SearchResultsSummaryItemViewController.h"
 #import "SearchResultsSummaryDataController.h"
 #import "SearchResultsSummaryItem.h"
-
+#import "DetailViewController.h"
+#import "ItemDetailsDataController.h"
 
 #define TITLELABEL_TAG 1
 #define PRICELABEL_TAG 2
@@ -26,6 +27,7 @@
 @implementation SearchResultsSummaryItemViewController
 
 @synthesize searchResultsSummaryDataController = _searchResultsSummaryDataController;
+@synthesize itemDetailDataController = _itemDetailDataController;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -34,6 +36,16 @@
         // Custom initialization
     }
     return self;
+}
+
+
+-(id) initWithCoder:(NSCoder *)aDecoder{
+    if (self = [super initWithCoder:aDecoder]) {
+        _itemDetailDataController = [[ItemDetailsDataController alloc] init];
+        return self;
+    }
+    
+    return nil;
 }
 
 - (void)viewDidLoad
@@ -59,6 +71,31 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return YES;
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UITableViewCell *cell = sender;
+    
+    // Find the index path for this cell
+    NSIndexPath *indexPath = [(UITableView *)cell.superview indexPathForCell: cell];
+    SearchResultsSummaryItem *searchItem = [self.searchResultsSummaryDataController objectInSummarySearchResultsAtIndex:indexPath.row];
+        
+    
+    if ([[segue identifier] isEqualToString:@"ShowItemDetails"]) {
+        DetailViewController *detailViewController = [segue destinationViewController];
+        NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> Ready to Segue ShowItemDetails");
+        NSBundle *mainBundle = [NSBundle mainBundle];
+        NSString *myFile = [mainBundle pathForResource: @"ProductDetail" ofType: @"xml"];
+        NSInputStream *iStream = [[NSInputStream alloc] initWithFileAtPath:myFile];
+        
+        NSXMLParser *queryResultsXMLParser = [[NSXMLParser alloc] initWithStream:iStream];
+        [queryResultsXMLParser setDelegate:self.itemDetailDataController];
+        [queryResultsXMLParser setShouldResolveExternalEntities:YES];
+        [queryResultsXMLParser parse];
+        detailViewController.itemDetailDataController = self.itemDetailDataController;
+        NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> File Path is %@",myFile);
+    } 
 }
 
 #pragma mark - Table view data source
