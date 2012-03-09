@@ -34,20 +34,20 @@ bool socioIndIsEmpty;
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 - (void) parserDidStartDocument:(NSXMLParser *)parser{
-    NSLog(@"Starting Document processing");
+    //NSLog(@"Starting Document processing");
     self.itemDetails = [[ItemDetails alloc] init];
     addingAVendor = false;
 }
 
 - (void) parserDidEndDocument:(NSXMLParser *)parser{
-    NSLog(@"Ending Document processing");
+    //NSLog(@"Ending Document processing");
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
-    NSLog(@"Found an element :%@",elementName);
-    if (attributeDict && [attributeDict count] > 0) {
-        NSLog(@"Element %@ has Attributes: %@",elementName, attributeDict);
-    }
+    //NSLog(@"Found an element :%@",elementName);
+    //if (attributeDict && [attributeDict count] > 0) {
+    //  NSLog(@"Element %@ has Attributes: %@",elementName, attributeDict);
+    //}
     
     //A new search element is found when the parser discovers a tag autn:hit
     if ([elementName isEqualToString:@"vndr_list"]){
@@ -68,12 +68,12 @@ bool socioIndIsEmpty;
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
-    NSLog(@"Found raw characters: %@", string);
+    //NSLog(@"Found raw characters: %@", string);
     self.currentString = string;
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
-    NSLog(@"Element is closing: %@", elementName);
+    //NSLog(@"Element is closing: %@", elementName);
     if ([elementName isEqualToString:@"title"]){
         self.itemDetails.itemName = self.currentString;
         self.currentString = nil;

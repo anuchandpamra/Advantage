@@ -84,7 +84,7 @@
     
     if ([[segue identifier] isEqualToString:@"ShowItemDetails"]) {
         DetailViewController *detailViewController = [segue destinationViewController];
-        NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> Ready to Segue ShowItemDetails");
+        //NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> Ready to Segue ShowItemDetails");
         NSBundle *mainBundle = [NSBundle mainBundle];
         NSString *myFile = [mainBundle pathForResource: @"ProductDetail" ofType: @"xml"];
         NSInputStream *iStream = [[NSInputStream alloc] initWithFileAtPath:myFile];
@@ -94,7 +94,7 @@
         [queryResultsXMLParser setShouldResolveExternalEntities:YES];
         [queryResultsXMLParser parse];
         detailViewController.itemDetailDataController = self.itemDetailDataController;
-        NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> File Path is %@",myFile);
+        //NSLog(@">>>>>>>>>>>>>===========>>>>>>>>>>>>>>> File Path is %@",myFile);
     } 
 }
 

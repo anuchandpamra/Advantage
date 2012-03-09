@@ -10,16 +10,12 @@
 
 @class SearchResultsSummaryDataController;
 
-@interface GSAViewController : UIViewController <NSXMLParserDelegate> {
+@interface GSAViewController : UIViewController <NSXMLParserDelegate, UISearchBarDelegate> {
     NSMutableData* myTokenBuffer;
 }
 
 
 @property (strong, nonatomic)SearchResultsSummaryDataController *searchResultDataController;
 @property (strong, nonatomic)NSString *currentSearchQuery;
-@property (weak, nonatomic) IBOutlet UITextField *searchQuery;
-@property (weak, nonatomic) IBOutlet UITableView *tableViewer;
-- (IBAction)search:(id)sender;
-
-- (IBAction)queryEntered:(id)sender;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchField;
 @end

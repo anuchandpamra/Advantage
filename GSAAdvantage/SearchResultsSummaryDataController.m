@@ -52,7 +52,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 - (void) parserDidStartDocument:(NSXMLParser *)parser{
-    NSLog(@"Starting Document processing");
+    //NSLog(@"Starting Document processing");
     self.summarySearchResults = [[NSMutableArray alloc] init];
 }
 
@@ -62,9 +62,9 @@
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
     //NSLog(@"Found an element :%@",elementName);
-    if (attributeDict && [attributeDict count] > 0) {
-        NSLog(@"Element %@ has Attributes: %@",elementName, attributeDict);
-    }
+    //if (attributeDict && [attributeDict count] > 0) {
+    //    NSLog(@"Element %@ has Attributes: %@",elementName, attributeDict);
+    //}
     
     //A new search element is found when the parser discovers a tag autn:hit
     if ([elementName isEqualToString:@"autn:hit"]){

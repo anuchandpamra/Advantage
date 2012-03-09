@@ -10,9 +10,8 @@
 #import "SearchResultsSummaryItemViewController.h"
 #import "SearchResultsSummaryDataController.h"
 
-@implementation GSAViewController
-@synthesize searchQuery;
-@synthesize tableViewer;
+@implementation GSAViewController;
+@synthesize searchField;
 
 @synthesize searchResultDataController = _searchResultDataController, currentSearchQuery = _currentSearchQuery;
 
@@ -42,14 +41,15 @@ NSString * const wsPath = @"&q=1:4ADV.OFF*&db=0&searchType=1&c=30&z=r";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.searchField resignFirstResponder];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
-    [self setSearchQuery:nil];
-    [self setTableViewer:nil];
+    [self setSearchField:nil];
     [super viewDidUnload];
+    [self.searchField resignFirstResponder];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -57,11 +57,13 @@ NSString * const wsPath = @"&q=1:4ADV.OFF*&db=0&searchType=1&c=30&z=r";
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.searchField resignFirstResponder];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.searchField resignFirstResponder];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -84,21 +86,6 @@ NSString * const wsPath = @"&q=1:4ADV.OFF*&db=0&searchType=1&c=30&z=r";
     }
 }
 
-- (IBAction)search:(id)sender {    
-    [sender resignFirstResponder];
-    self.currentSearchQuery = searchQuery.text;
-    
-    NSXMLParser *queryResultsXMLParser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://%@%@%@", hostDNS,self.currentSearchQuery, wsPath]]];
-    [queryResultsXMLParser setDelegate:self];
-    [queryResultsXMLParser setShouldResolveExternalEntities:YES];
-    [queryResultsXMLParser parse];
-    
-
-}
-
-- (IBAction)queryEntered:(id)sender {
-    [sender resignFirstResponder];
-}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"ShowSearchSummaryResults"]) {
@@ -127,7 +114,7 @@ NSString * const wsPath = @"&q=1:4ADV.OFF*&db=0&searchType=1&c=30&z=r";
 
 - (void) parserDidEndDocument:(NSXMLParser *)parser{
     [self.searchResultDataController parserDidEndDocument:parser];
-    [self performSegueWithIdentifier:@"ShowSearchSummaryResults" sender:searchQuery];
+    [self performSegueWithIdentifier:@"ShowSearchSummaryResults" sender:searchField];
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI
@@ -145,7 +132,30 @@ qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
     [self.searchResultDataController parser: parser didEndElement:elementName namespaceURI:namespaceURI qualifiedName:qName];
 }
 
+#pragma mark - UISearchBarDelegate
 
+- (void)startSearch:(NSString *)searchText {
+    
+    if ([searchText length] == 0) {
+        return;
+    }
+    
+    self.currentSearchQuery = searchText;
+    
+    
+    NSXMLParser *queryResultsXMLParser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://%@%@%@", hostDNS,self.currentSearchQuery, wsPath]]];
+    [queryResultsXMLParser setDelegate:self];
+    [queryResultsXMLParser setShouldResolveExternalEntities:YES];
+    [queryResultsXMLParser parse];
+    
+}
+
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [self startSearch: searchBar.text];
+    [searchBar resignFirstResponder];
+    
+}
 
 
 @end

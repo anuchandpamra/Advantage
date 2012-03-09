@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		6E4DE1E114FBA7DA00C6D18B /* SearchResultsSummaryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DE1E014FBA7DA00C6D18B /* SearchResultsSummaryItem.m */; };
 		6E4DE1E514FBAA9700C6D18B /* SearchResultsSummaryDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DE1E414FBAA9700C6D18B /* SearchResultsSummaryDataController.m */; };
+		6E6AF408150A6EF800F59431 /* 104-index-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6AF407150A6EF800F59431 /* 104-index-cards.png */; };
+		6E6AF40A150A70B300F59431 /* 02-redo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6AF409150A70B300F59431 /* 02-redo.png */; };
+		6E6AF40C150A70BE00F59431 /* 33-cabinet.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6AF40B150A70BE00F59431 /* 33-cabinet.png */; };
+		6E7510A5150AA5DA009312A5 /* 593US58.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E7510A4150AA5DA009312A5 /* 593US58.jpg */; };
+		6E7510A7150AA5ED009312A5 /* product_detail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E7510A6150AA5ED009312A5 /* product_detail.jpg */; };
+		6E7510A9150AA684009312A5 /* BOSB2200BK11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E7510A8150AA684009312A5 /* BOSB2200BK11.jpg */; };
 		6EC3EFE015046171007B383A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3EFDF15046171007B383A /* DetailViewController.m */; };
 		6EC3EFE41504EAB6007B383A /* VendorForItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3EFE31504EAB6007B383A /* VendorForItem.m */; };
 		6EC3EFE715050788007B383A /* ItemDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3EFE615050788007B383A /* ItemDetails.m */; };
@@ -29,6 +35,9 @@
 		6ECEF8F114EC92CC0052A71E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECEF8EF14EC92CC0052A71E /* InfoPlist.strings */; };
 		6ECEF8F414EC92CC0052A71E /* GSAAdvantageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECEF8F314EC92CC0052A71E /* GSAAdvantageTests.m */; };
 		6ECEF8FE14EC939B0052A71E /* gsa_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6ECEF8FD14EC939B0052A71E /* gsa_logo.jpg */; };
+		6EEEF1001507F9EE00F6A103 /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEF0FE1507F9EE00F6A103 /* 06-magnify.png */; };
+		6EEEF1011507F9EE00F6A103 /* 80-shopping-cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEF0FF1507F9EE00F6A103 /* 80-shopping-cart.png */; };
+		6EEEF1061508077B00F6A103 /* gsa_logo_enhanced.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EEEF1051508077B00F6A103 /* gsa_logo_enhanced.jpg */; };
 		6EF2134614FBCC0E00B60328 /* SearchResultsSummaryItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF2134514FBCC0E00B60328 /* SearchResultsSummaryItemViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +56,12 @@
 		6E4DE1E014FBA7DA00C6D18B /* SearchResultsSummaryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsSummaryItem.m; sourceTree = "<group>"; };
 		6E4DE1E314FBAA9700C6D18B /* SearchResultsSummaryDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsSummaryDataController.h; sourceTree = "<group>"; };
 		6E4DE1E414FBAA9700C6D18B /* SearchResultsSummaryDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsSummaryDataController.m; sourceTree = "<group>"; };
+		6E6AF407150A6EF800F59431 /* 104-index-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "104-index-cards.png"; sourceTree = "<group>"; };
+		6E6AF409150A70B300F59431 /* 02-redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-redo.png"; sourceTree = "<group>"; };
+		6E6AF40B150A70BE00F59431 /* 33-cabinet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "33-cabinet.png"; sourceTree = "<group>"; };
+		6E7510A4150AA5DA009312A5 /* 593US58.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 593US58.jpg; sourceTree = "<group>"; };
+		6E7510A6150AA5ED009312A5 /* product_detail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_detail.jpg; sourceTree = "<group>"; };
+		6E7510A8150AA684009312A5 /* BOSB2200BK11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BOSB2200BK11.jpg; sourceTree = "<group>"; };
 		6EC3EFDE15046171007B383A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		6EC3EFDF15046171007B383A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		6EC3EFE21504EAB6007B383A /* VendorForItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorForItem.h; sourceTree = "<group>"; };
@@ -77,6 +92,9 @@
 		6ECEF8F214EC92CC0052A71E /* GSAAdvantageTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAAdvantageTests.h; sourceTree = "<group>"; };
 		6ECEF8F314EC92CC0052A71E /* GSAAdvantageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAAdvantageTests.m; sourceTree = "<group>"; };
 		6ECEF8FD14EC939B0052A71E /* gsa_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gsa_logo.jpg; path = ../../../Downloads/gsa_logo.jpg; sourceTree = "<group>"; };
+		6EEEF0FE1507F9EE00F6A103 /* 06-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-magnify.png"; sourceTree = "<group>"; };
+		6EEEF0FF1507F9EE00F6A103 /* 80-shopping-cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "80-shopping-cart.png"; sourceTree = "<group>"; };
+		6EEEF1051508077B00F6A103 /* gsa_logo_enhanced.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gsa_logo_enhanced.jpg; path = ../gsa_logo_enhanced.jpg; sourceTree = "<group>"; };
 		6EF2134414FBCC0E00B60328 /* SearchResultsSummaryItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsSummaryItemViewController.h; sourceTree = "<group>"; };
 		6EF2134514FBCC0E00B60328 /* SearchResultsSummaryItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsSummaryItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +123,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E7510A2150AA514009312A5 /* dummyImages */ = {
+			isa = PBXGroup;
+			children = (
+				6E7510A8150AA684009312A5 /* BOSB2200BK11.jpg */,
+				6E7510A6150AA5ED009312A5 /* product_detail.jpg */,
+				6E7510A4150AA5DA009312A5 /* 593US58.jpg */,
+			);
+			name = dummyImages;
+			sourceTree = "<group>";
+		};
 		6ECEF8B614EC92CB0052A71E = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +166,8 @@
 		6ECEF8CB14EC92CB0052A71E /* GSAAdvantage */ = {
 			isa = PBXGroup;
 			children = (
+				6E7510A2150AA514009312A5 /* dummyImages */,
+				6EEEF1051508077B00F6A103 /* gsa_logo_enhanced.jpg */,
 				6E4DE1DF14FBA7DA00C6D18B /* SearchResultsSummaryItem.h */,
 				6E4DE1E014FBA7DA00C6D18B /* SearchResultsSummaryItem.m */,
 				6E4DE1E314FBAA9700C6D18B /* SearchResultsSummaryDataController.h */,
@@ -147,6 +177,9 @@
 				6ECEF8D414EC92CC0052A71E /* GSAAppDelegate.h */,
 				6ECEF8D514EC92CC0052A71E /* GSAAppDelegate.m */,
 				6ECEF8D714EC92CC0052A71E /* MainStoryboard_iPhone.storyboard */,
+				6E6AF40B150A70BE00F59431 /* 33-cabinet.png */,
+				6E6AF409150A70B300F59431 /* 02-redo.png */,
+				6E6AF407150A6EF800F59431 /* 104-index-cards.png */,
 				6ECEF8DA14EC92CC0052A71E /* MainStoryboard_iPad.storyboard */,
 				6ECEF8DD14EC92CC0052A71E /* GSAViewController.h */,
 				6ECEF8DE14EC92CC0052A71E /* GSAViewController.m */,
@@ -160,6 +193,8 @@
 				6EC3EFE515050788007B383A /* ItemDetails.h */,
 				6EC3EFE615050788007B383A /* ItemDetails.m */,
 				6EC3EFEB1506471F007B383A /* ProductDetail.xml */,
+				6EEEF0FE1507F9EE00F6A103 /* 06-magnify.png */,
+				6EEEF0FF1507F9EE00F6A103 /* 80-shopping-cart.png */,
 			);
 			path = GSAAdvantage;
 			sourceTree = "<group>";
@@ -240,7 +275,7 @@
 		6ECEF8B814EC92CB0052A71E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "SoftExcel Technologies Inc.,";
 			};
 			buildConfigurationList = 6ECEF8BB14EC92CB0052A71E /* Build configuration list for PBXProject "GSAAdvantage" */;
@@ -271,6 +306,15 @@
 				6ECEF8DC14EC92CC0052A71E /* MainStoryboard_iPad.storyboard in Resources */,
 				6ECEF8FE14EC939B0052A71E /* gsa_logo.jpg in Resources */,
 				6EC3EFEC1506471F007B383A /* ProductDetail.xml in Resources */,
+				6EEEF1001507F9EE00F6A103 /* 06-magnify.png in Resources */,
+				6EEEF1011507F9EE00F6A103 /* 80-shopping-cart.png in Resources */,
+				6EEEF1061508077B00F6A103 /* gsa_logo_enhanced.jpg in Resources */,
+				6E6AF408150A6EF800F59431 /* 104-index-cards.png in Resources */,
+				6E6AF40A150A70B300F59431 /* 02-redo.png in Resources */,
+				6E6AF40C150A70BE00F59431 /* 33-cabinet.png in Resources */,
+				6E7510A5150AA5DA009312A5 /* 593US58.jpg in Resources */,
+				6E7510A7150AA5ED009312A5 /* product_detail.jpg in Resources */,
+				6E7510A9150AA684009312A5 /* BOSB2200BK11.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
