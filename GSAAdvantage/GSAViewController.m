@@ -42,6 +42,11 @@ NSString * const wsPath = @"&q=1:4ADV.OFF*&db=0&searchType=1&c=30&z=r";
 {
     [super viewDidLoad];
     [self.searchField resignFirstResponder];
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    NSString *searchBGImageFile = [mainBundle pathForResource: @"searchbg" ofType: @"png"];
+    UIImage *searchBGImage = [UIImage imageWithContentsOfFile:searchBGImageFile];
+    self.searchField.backgroundImage = searchBGImage;
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -152,6 +157,7 @@ qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"Starting Search");
     [self startSearch: searchBar.text];
     [searchBar resignFirstResponder];
     

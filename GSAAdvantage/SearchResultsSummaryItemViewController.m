@@ -29,6 +29,8 @@
 @synthesize searchResultsSummaryDataController = _searchResultsSummaryDataController;
 @synthesize itemDetailDataController = _itemDetailDataController;
 
+bool iPad = false;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -42,6 +44,9 @@
 -(id) initWithCoder:(NSCoder *)aDecoder{
     if (self = [super initWithCoder:aDecoder]) {
         _itemDetailDataController = [[ItemDetailsDataController alloc] init];
+#ifdef UI_USER_INTERFACE_IDIOM
+        iPad = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
+#endif
         return self;
     }
     
@@ -51,7 +56,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableView.rowHeight = 100.f;
+    
+    if (iPad) {
+        self.tableView.rowHeight = 200.f;
+    }
+    else {
+        self.tableView.rowHeight = 100.f;
+    }
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

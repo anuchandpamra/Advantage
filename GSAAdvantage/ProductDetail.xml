@@ -72,6 +72,91 @@
             <shipping></shipping>
         </vndr>
         <vndr>
+            <price>$105.67 EA</price>
+            <vndr_name>New Computech Inc.</vndr_name>
+            <socio_inds>
+                <ind>s</ind>
+                <ind>d</ind>
+                <ind>w</ind>
+                <ind>8a</ind>                
+            </socio_inds>
+            <delivery_dt>3 days delivered FBO</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
+            <price>$108.12 EA</price>
+            <vndr_name>STAPLES</vndr_name>
+            <socio_inds>
+                <ind>o</ind>
+            </socio_inds>
+            <delivery_dt>1 days delivered ARO</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
+            <price>$108.47 EA</price>
+            <vndr_name>Complete Packaging and Shipping SUP</vndr_name>
+            <socio_inds>
+                <ind>s</ind>
+            </socio_inds>
+            <delivery_dt>5 days delivered ARO</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
+            <price>$108.50 EA</price>
+            <vndr_name>Sands Business Equipment and Supplies</vndr_name>
+            <socio_inds>
+                <ind>s</ind>
+                <ind>d</ind>                
+                <ind>w</ind>
+            </socio_inds>
+            <delivery_dt>30 days delivered ARO</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
+            <price>$110.19 EA</price>
+            <vndr_name>AAA Laser Service and Supplies</vndr_name>
+            <socio_inds>
+                <ind>s</ind>
+                <ind>w</ind>
+            </socio_inds>
+            <delivery_dt>30 days delivered ARO</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
+            <price>$11.86 EA</price>
+            <vndr_name>American Toner LLC</vndr_name>
+            <socio_inds>
+                <ind>s</ind>
+                <ind>w</ind>
+            </socio_inds>
+            <delivery_dt>30 days delivered ARO</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
+            <price>$11.86 EA</price>
+            <vndr_name>American Toner LLC</vndr_name>
+            <socio_inds>
+                <ind>s</ind>
+                <ind>w</ind>
+            </socio_inds>
+            <delivery_dt>30 days delivered ARO</delivery_dt>
+            <min></min>
+            <FOB></FOB>
+            <shipping></shipping>
+        </vndr>
+        <vndr>
             <price>Price</price>
             <vndr_name>Vendor Name</vndr_name>
             <socio_inds>

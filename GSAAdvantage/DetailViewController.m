@@ -30,12 +30,14 @@
 @interface DetailViewController ()
 
 @property NSInteger selectedRowIndex;
+@property bool iPad;
 
 @end
 
 @implementation DetailViewController
 
 @synthesize selectedRowIndex = _selectedRowIndex, itemDetailDataController = _itemDetailDataController;
+@synthesize iPad;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -45,6 +47,19 @@
     }
     return self;
 }
+
+-(id) initWithCoder:(NSCoder *)aDecoder{
+    if (self = [super initWithCoder:aDecoder]) {
+#ifdef UI_USER_INTERFACE_IDIOM
+        self.iPad = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
+#endif
+        return self;
+    }
+    
+    
+    return nil;
+}
+
 
 - (void)viewDidLoad
 {
@@ -181,19 +196,23 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat result;
+    CGFloat multiplier = 1.f;
+    if (self.iPad) {
+        multiplier = 2.f;
+    }
     switch ([indexPath row])
     {
         case 0:
-            result = 160.0f;
+            result = 160.0f*multiplier;
             break;
         case 1:
-            result = 20.f;
+            result = 20.f*multiplier;
             break;
         case 2:
-            result = 20.0f;
+            result = 20.0f*multiplier;
             break;
         default:
-            result = 50.0f;
+            result = 50.0f*multiplier;
             break;
     }
     return result;
